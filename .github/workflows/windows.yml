@@ -3,9 +3,13 @@ name: BURNER Windows Build
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -17,10 +21,12 @@ jobs:
       - name: Install WiX
         run: choco install wixtoolset --version=3.14.1 -y
 
-      - name: Build installer
+      - name: Build BURNER
         run: .\gradlew.bat :desktopApp:packageExe
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload installer
+        uses: actions/upload-artifact@v4
         with:
-          name: BURNER-Windows
+          name: BURNER-Windows-Installer
           path: desktopApp/build/compose/binaries/main/exe/*.exe
+          if-no-files-found: error

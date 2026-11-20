@@ -530,9 +530,9 @@ compose.desktop {
                 TargetFormat.Deb,
                 TargetFormat.Rpm,
             )
-            packageName = "BitChord"
+            packageName = "BURNER"
             packageVersion = nativePackageVersion
-            description = if (targetOs == "windows") "BitChord" else "Aesthetic YouTube Music client"
+            description = if (targetOs == "windows") "BURNER" else "Aesthetic YouTube Music client"
             vendor = "BitChord contributors"
             copyright = "Copyright © 2026 BitChord contributors"
 
@@ -584,7 +584,7 @@ compose.desktop {
             windows {
                 iconFile.set(project.file("packaging/icons/AppIcon.ico"))
                 upgradeUuid = "8f3c1d24-6a2b-4f5e-9c17-2b8d54e0a913"
-                menuGroup = "BitChord"
+                menuGroup = "BURNER"
                 shortcut = true
                 dirChooser = false
                 perUserInstall = true
