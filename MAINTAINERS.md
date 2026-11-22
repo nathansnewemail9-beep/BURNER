@@ -61,5 +61,6 @@ This list is automatically generated from GitHub repository contributor data.
 - [@cengo12](https://github.com/cengo12)
 - [@BernoldM](https://github.com/BernoldM)
 - [@bazilbycom](https://github.com/bazilbycom)
+- [@nathansnewemail9-beep](https://github.com/nathansnewemail9-beep)
 - [@Aimar-18](https://github.com/Aimar-18)
 <!-- END CONTRIBUTORS -->
